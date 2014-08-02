@@ -16,6 +16,7 @@ TARGET_BOOTLOADER_BOARD_NAME := hw01e
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei user_debug=31 kgsl.mmutype=gpummu
 BOARD_KERNEL_BASE := 0x80200000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x1400000
 BOARD_KERNEL_PAGESIZE := 2048
 
 # fix this up by examining /proc/mtd on a running device
