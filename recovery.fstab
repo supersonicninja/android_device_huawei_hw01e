@@ -1,8 +1,13 @@
-#<src> <mnt_point> <type> <mnt_flags and options> <fs_mgr_flags>
+# Android fstab file. 
+# The filesystem that contains the filesystem checker binary (typically /system) cannot 
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK 
 
-/dev/block/platform/msm_sdcc.1/by-name/boot   /boot   emmc    defaults    defaults
-/dev/block/platform/msm_sdcc.1/by-name/recovery   /recovery   emmc    defaults    defaults
-/dev/block/platform/msm_sdcc.1/by-name/system /system ext4 ro,noatime,barrier=0,data=writeback    wait,check
-/dev/block/platform/msm_sdcc.1/by-name/userdata /data ext4 rw,nosuid,nodev,noatime,barrier=0,noauto_da_alloc,data=writeback,errors=continue   wait,check
-/dev/block/platform/msm_sdcc.1/by-name/cache /cache ext4 rw,nosuid,nodev,noatime,barrier=0,noauto_da_alloc,data=writeback wait
-/dev/block/mmcblk1p1    /external_sd    vfat    defaults    voldmanaged=sdcard:auto,check
+#<src>     		<mnt_point>	<type>	<mnt_flags>	<fs_mgr_flags> 
+/dev/block/mmcblk0p11	/boot		emmc	defaults	defaults
+/dev/block/mmcblk0p14	/system		ext4	defaults	defaults
+/dev/block/mmcblk0p16	/cache		ext4	defaults	defaults
+/dev/block/mmcblk0p18	/misc		emmc	defaults	defaults
+/dev/block/mmcblk0p19	/recovery	emmc	defaults	defaults
+/dev/block/mmcblk0p21	/cust		ext4	defaults	defaults
+/dev/block/mmcblk0p26	/data		ext4	defaults	defaults
+/devices/platform/msm_sdcc.3/mmc_host/mmc1    /external_sd    vfat    defaults    voldmanaged=sdcard:auto
