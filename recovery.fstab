@@ -1,10 +1,8 @@
-# mount point	fstype    device    	[device2]
+#<src> <mnt_point> <type> <mnt_flags and options> <fs_mgr_flags>
 
-/boot       mtd         boot
-/cache      yaffs2      cache
-/data       yaffs2      userdata
-/misc       mtd         misc
-/recovery   mtd         recovery
-/sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
-/system     yaffs2      system
-/sd-ext     ext4        /dev/block/mmcblk0p2
+/dev/block/platform/msm_sdcc.1/by-name/boot   /boot   emmc    defaults    defaults
+/dev/block/platform/msm_sdcc.1/by-name/recovery   /recovery   emmc    defaults    defaults
+/dev/block/platform/msm_sdcc.1/by-name/system /system ext4 ro,noatime,barrier=0,data=writeback    wait,check
+/dev/block/platform/msm_sdcc.1/by-name/userdata /data ext4 rw,nosuid,nodev,noatime,barrier=0,noauto_da_alloc,data=writeback,errors=continue   wait,check
+/dev/block/platform/msm_sdcc.1/by-name/cache /cache ext4 rw,nosuid,nodev,noatime,barrier=0,noauto_da_alloc,data=writeback wait
+/dev/block/mmcblk1p1    /external_sd    vfat    defaults    voldmanaged=sdcard:auto,check
