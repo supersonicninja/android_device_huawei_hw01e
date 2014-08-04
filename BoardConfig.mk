@@ -3,6 +3,8 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/huawei/hw01e/BoardConfigVendor.mk
 
+TARGET_OTA_ASSERT_DEVICE := U9501L,u9501l,hw01e,HW01E,HW-01E,hw-01e
+
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := msm8960
