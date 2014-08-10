@@ -4,10 +4,11 @@
 
 #<src>     		<mnt_point>	<type>	<mnt_flags>	<fs_mgr_flags> 
 /dev/block/mmcblk0p11	/boot		emmc	defaults	defaults
-/dev/block/mmcblk0p14	/system		ext4	defaults	defaults
-/dev/block/mmcblk0p16	/cache		ext4	defaults	defaults
+/dev/block/mmcblk0p14	/system		ext4	ro,barrier=1	wait,check
+/dev/block/mmcblk0p16	/cache		ext4	nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue,data=writeback	wait
 /dev/block/mmcblk0p18	/misc		emmc	defaults	defaults
 /dev/block/mmcblk0p19	/recovery	emmc	defaults	defaults
-/dev/block/mmcblk0p21	/cust		ext4	defaults	defaults
-/dev/block/mmcblk0p26	/data		ext4	defaults	defaults
+/dev/block/mmcblk0p21	/cust		ext4	nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue,data=writeback	wait
+/dev/block/mmcblk0p26	/data		ext4	nosuid,nodev,barrier=1,noauto_da_alloc,errors=continue,data=writeback	wait,check
+/dev/null               /sdcard         datamedia       defaults       defaults
 /devices/platform/msm_sdcc.3/mmc_host/mmc1    /external_sd    vfat    defaults    voldmanaged=sdcard:auto

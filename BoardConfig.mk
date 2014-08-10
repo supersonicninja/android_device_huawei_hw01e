@@ -32,6 +32,8 @@ TARGET_QCOM_AUDIO_VARIANT := legacy
 TARGET_QCOM_DISPLAY_VARIANT := legacy
 TARGET_QCOM_MEDIA_VARIANT := legacy
 
+BOARD_EGL_CFG := device/huawei/hw01e/egl.cfg
+
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei user_debug=31 kgsl.mmutype=gpummu
 BOARD_KERNEL_BASE := 0x80200000
