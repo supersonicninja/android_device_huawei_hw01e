@@ -10,7 +10,34 @@ DEVICE_PACKAGE_OVERLAYS += device/huawei/hw01e/overlay
 # Configs - ramdisk
 PRODUCT_COPY_FILES += \
     device/huawei/hw01e/recovery.fstab:root/fstab.huawei \
-    device/huawei/hw01e/ramdisk/init.huawei.rc:root/init.huawei.rc
+    device/huawei/hw01e/ramdisk/init.rc:root/init.rc \
+    device/huawei/hw01e/ramdisk/init.huawei.rc:root/init.huawei.rc \
+    device/huawei/hw01e/ramdisk/ueventd.rc:root/ueventd.rc
+
+# EGL config
+PRODUCT_COPY_FILES += \
+device/huawei/hw01e/egl.cfg:system/lib/egl/egl.cfg
+
+# Graphics
+PRODUCT_PACKAGES += \
+copybit.msm8960 \
+gralloc.msm8960 \
+hwcomposer.msm8960 \
+libgenlock \
+libmemalloc \
+liboverlay \
+libQcomUI \
+libtilerenderer \
+libI420colorconvert
+
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+make_ext4fs \
+setup_fs
+
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sf.lcd_density=320 \
+persist.fuse_sdcard=false
 
 LOCAL_PATH := device/huawei/hw01e
 ifeq ($(TARGET_PREBUILT_KERNEL),)
