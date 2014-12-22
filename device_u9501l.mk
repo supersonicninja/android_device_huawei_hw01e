@@ -7,6 +7,11 @@ $(call inherit-product-if-exists, vendor/huawei/u9501l/u9501l-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u9501l/overlay
 
+# Configs - ramdisk
+PRODUCT_COPY_FILES += \
+ device/huawei/u9501l/recovery.fstab:root/fstab.huawei \
+ device/huawei/u9501l/ramdisk/init.huawei.rc:root/init.huawei.rc
+
 LOCAL_PATH := device/huawei/u9501l
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
@@ -22,3 +27,6 @@ $(call inherit-product, build/target/product/full.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_u9501l
 PRODUCT_DEVICE := u9501l
+PRODUCT_BRAND := huawei
+PRODUCT_MODEL := HW-01E
+PRODUCT_MANUFACTURER := huawei
