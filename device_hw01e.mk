@@ -10,9 +10,11 @@ DEVICE_PACKAGE_OVERLAYS += device/huawei/hw01e/overlay
 # Configs - ramdisk
 PRODUCT_COPY_FILES += \
     device/huawei/hw01e/recovery.fstab:root/fstab.huawei \
-    device/huawei/hw01e/ramdisk/init.rc:root/init.rc \
-    device/huawei/hw01e/ramdisk/init.huawei.rc:root/init.huawei.rc \
+    device/huawei/hw01e/ramdisk/init.custom.rc:root/init.rc \
     device/huawei/hw01e/ramdisk/ueventd.rc:root/ueventd.rc
+#device/huawei/hw01e/ramdisk/init.rc:root/init.rc \
+
+
 
 # EGL config
 PRODUCT_COPY_FILES += \
