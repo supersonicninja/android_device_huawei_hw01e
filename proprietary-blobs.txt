@@ -31,15 +31,15 @@ lib/libsc-a2xx.so
 lib/libsc-a3xx.so
 
 #GPU blobs
+#lib/libmemalloc.so
+#lib/libmm-abl.so
+#lib/libmm-abl-oem.so
+#lib/liboverlay.so
 lib/hw/copybit.msm8960.so
 lib/hw/gralloc.msm8960.so
 lib/hw/hwcomposer.msm8960.so
 lib/libgenlock.so
-lib/libmemalloc.so
-lib/libmm-abl.so
-lib/libmm-abl-oem.so
-lib/liboverlay.so
 lib/libQcomUI.so
 lib/libtilerenderer.so
 
-#Video
+
