@@ -21,16 +21,16 @@ PRODUCT_COPY_FILES += \
 device/huawei/hw01e/egl.cfg:system/lib/egl/egl.cfg
 
 # Graphics
-PRODUCT_PACKAGES += \
-copybit.msm8960 \
-gralloc.msm8960 \
-hwcomposer.msm8960 \
-libgenlock \
-libmemalloc \
-liboverlay \
-libQcomUI \
-libtilerenderer \
-libI420colorconvert
+#PRODUCT_PACKAGES += \
+#copybit.msm8960 \
+#gralloc.msm8960 \
+#hwcomposer.msm8960 \
+#libgenlock \
+#libmemalloc \
+#liboverlay \
+#libQcomUI \
+#libtilerenderer \
+#libI420colorconvert
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
