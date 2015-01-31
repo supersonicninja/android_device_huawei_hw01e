@@ -22,16 +22,14 @@ device/huawei/hw01e/egl.cfg:system/lib/egl/egl.cfg
 
 # Graphics
 PRODUCT_PACKAGES += \
+libgenlock \
 libmemalloc \
-liboverlay
+liboverlay \
+libQcomUI \
+libtilerenderer
 #copybit.msm8960 \
 #gralloc.msm8960 \
 #hwcomposer.msm8960 \
-#libgenlock \
-#libmemalloc \
-#liboverlay \
-#libQcomUI \
-#libtilerenderer \
 #libI420colorconvert
 
 # Filesystem management tools
@@ -59,3 +57,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_hw01e
 PRODUCT_DEVICE := hw01e
 
+$(call inherit-product, frameworks/base/build/phone-xhdpi-1024-dalvik-heap.mk)
