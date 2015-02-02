@@ -14,14 +14,13 @@ PRODUCT_COPY_FILES += \
     device/huawei/hw01e/ramdisk/ueventd.rc:root/ueventd.rc
 #device/huawei/hw01e/ramdisk/init.rc:root/init.rc \
 
-
-
 # EGL config
 PRODUCT_COPY_FILES += \
 device/huawei/hw01e/egl.cfg:system/lib/egl/egl.cfg
 
 # Graphics
 PRODUCT_PACKAGES += \
+hwcomposer.msm8960 \
 libgenlock \
 libmemalloc \
 liboverlay \
@@ -29,8 +28,10 @@ libQcomUI \
 libtilerenderer
 #copybit.msm8960 \
 #gralloc.msm8960 \
-#hwcomposer.msm8960 \
 #libI420colorconvert
+
+# SDCard
+PRODUCT_COPY_FILES += device/huawei/hw01e/vold.fstab:system/etc/vold.fstab
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -39,7 +40,9 @@ setup_fs
 
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.sf.lcd_density=320 \
-persist.fuse_sdcard=false
+persist.fuse_sdcard=false \
+ro.config.internal_sdcard=yes \
+persist.sys.main_storage=internal_sd
 
 LOCAL_PATH := device/huawei/hw01e
 ifeq ($(TARGET_PREBUILT_KERNEL),)

@@ -31,9 +31,7 @@ lib/libsc-a2xx.so
 lib/libsc-a3xx.so
 
 #GPU blobs
-#lib/libtilerenderer.so
 lib/hw/copybit.msm8960.so
 lib/hw/gralloc.msm8960.so
-lib/hw/hwcomposer.msm8960.so
 
 
