@@ -7,6 +7,9 @@ $(call inherit-product-if-exists, vendor/huawei/hw01e/hw01e-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/hw01e/overlay
 
+#Boot Animation
+PRODUCT_COPY_FILES += vendor/cm/prebuilt/common/bootanimation/vertical-720x1280.zip:/system/media/bootanimation.zip
+
 # Configs - ramdisk
 PRODUCT_COPY_FILES += \
     device/huawei/hw01e/recovery.fstab:root/fstab.huawei \
