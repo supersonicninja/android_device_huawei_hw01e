@@ -7,6 +7,10 @@ $(call inherit-product-if-exists, vendor/huawei/hw01e/hw01e-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/hw01e/overlay
 
+#This device is xhdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
 #Boot Animation
 PRODUCT_COPY_FILES += vendor/cm/prebuilt/common/bootanimation/vertical-720x1280.zip:/system/media/bootanimation.zip
 
