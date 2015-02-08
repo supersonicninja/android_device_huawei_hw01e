@@ -18,8 +18,9 @@ PRODUCT_COPY_FILES += vendor/cm/prebuilt/common/bootanimation/vertical-720x1280.
 PRODUCT_COPY_FILES += \
     device/huawei/hw01e/recovery.fstab:root/fstab.huawei \
     device/huawei/hw01e/ramdisk/init.custom.rc:root/init.rc \
+    device/huawei/hw01e/ramdisk/init.huawei.rc:root/init.huawei.rc \
+    device/huawei/hw01e/ramdisk/init.wifi.rc:root/init.wifi.rc \
     device/huawei/hw01e/ramdisk/ueventd.rc:root/ueventd.rc
-#device/huawei/hw01e/ramdisk/init.rc:root/init.rc \
 
 # EGL config
 PRODUCT_COPY_FILES += \
@@ -36,6 +37,11 @@ libtilerenderer
 #copybit.msm8960 \
 #gralloc.msm8960 \
 #libI420colorconvert
+
+# WiFi
+PRODUCT_COPY_FILES += \
+ frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+frameworks/base/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml
 
 # SDCard
 PRODUCT_COPY_FILES += device/huawei/hw01e/vold.fstab:system/etc/vold.fstab

@@ -34,4 +34,27 @@ lib/libsc-a3xx.so
 lib/hw/copybit.msm8960.so
 lib/hw/gralloc.msm8960.so
 
+# Wifi
+bin/dhcpcd
+bin/wpa_supplicant
+etc/dhcpcd/dhcpcd.conf
+etc/dhcpcd/dhcpcd-run-hooks
+etc/dhcpcd/dhcpcd-hooks/20-dns.conf
+etc/dhcpcd/dhcpcd-hooks/95-configured
+etc/wifi/wpa_supplicant.conf
+vendor/firmware/fw_bcmdhd.bin
+vendor/firmware/fw_bcmdhd_apsta.bin
+vendor/firmware/fw_bcmdhd_p2p.bin
+vendor/firmware/fw_bcmdhd_test.bin
+vendor/firmware/nvram_C8868L_VA.txt
+vendor/firmware/nvram_C8868L_VB.txt
+vendor/firmware/nvram_C8869L_VA.txt
+vendor/firmware/nvram_U9201L_VA.txt
+vendor/firmware/nvram_U9201L_VB.txt
+vendor/firmware/nvram_U9201L_VC.txt
+vendor/firmware/nvram_U9501L_VA.txt
+vendor/firmware/nvram_U9501L_VB.txt
+vendor/firmware/nvram_U9501L_VC.txt
+vendor/firmware/nvram_U9501L_VD.txt
+vendor/firmware/nvram_U9501L_VE.txt
 
