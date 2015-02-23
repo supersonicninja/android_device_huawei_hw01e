@@ -26,6 +26,36 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 device/huawei/hw01e/egl.cfg:system/lib/egl/egl.cfg
 
+# Audio
+PRODUCT_PACKAGES += \
+audio.primary.msm8960 \
+audio_policy.msm8960 \
+libalsa-intf 
+#alsa.msm8960 \
+#DL_REC \
+#DL_REC_2x \
+#FM_A2DP_REC \
+#FM_A2DP_REC_2x \
+#FM_Digital_Radio \
+#FM_Digital_Radio_2x \
+#FM_REC \
+#FM_REC_2x \
+#HiFi \
+#HiFi_2x \
+#HiFi_Low_Power \
+#HiFi_Low_Power_2x \
+#HiFi_Rec \
+#HiFi_Rec_2x \
+#snd_soc_msm \
+#snd_soc_msm_2x \
+#UL_DL_REC \
+#UL_DL_REC_2x \
+#Voice_Call \
+#Voice_Call_2x \
+#Voice_Call_IP \
+#Voice_Call_IP_2x
+
+
 # Graphics
 PRODUCT_PACKAGES += \
 hwcomposer.msm8960 \
