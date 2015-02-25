@@ -223,8 +223,9 @@ on post-fs-data
 
 # Include extra init file
     import /init.cm.rc
-    import /init.wifi.rc
     import /init.huawei.rc
+    import /init.target.rc
+    import /init.wifi.rc
 
 on boot
 # basic network init

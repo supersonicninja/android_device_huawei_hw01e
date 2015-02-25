@@ -1,4 +1,4 @@
-# Audio
+# Audio acdb
 etc/acdb_database/C8869L_VA.acdb
 etc/acdb_database/U9201L_VA.acdb
 etc/acdb_database/U9201L_VC.acdb
@@ -11,8 +11,8 @@ etc/acdb_database/U9501L_VB.acdb
 etc/acdb_database/U9501L_VC.acdb
 etc/acdb_database/U9501L_VD.acdb
 etc/acdb_database/U9501L_VE.acdb
-etc/firmware/wcd9310/wcd9310_anc.bin
-etc/firmware/wcd9310/wcd9310_mbhc.bin
+
+# Audio firmware
 etc/firmware/dsps.b00
 etc/firmware/dsps.b01
 etc/firmware/dsps.b02
@@ -27,6 +27,8 @@ etc/firmware/q6.b04
 etc/firmware/q6.b05
 etc/firmware/q6.b06
 etc/firmware/q6.mdt
+
+# Audio config
 etc/snd_soc_msm/DL_REC
 etc/snd_soc_msm/DL_REC_2x
 etc/snd_soc_msm/DL_REC_bcm
@@ -71,17 +73,28 @@ etc/snd_soc_msm/Voice_Call_IP
 etc/snd_soc_msm/Voice_Call_IP_2x
 etc/snd_soc_msm/Voice_Call_IP_bcm
 etc/snd_soc_msm/Voice_Call_IP_bcm_2x
+
+# Audio blobs
 lib/hw/alsa.msm8960.so
 lib/libacdbloader.so
-#lib/libalsa-intf.so
-#lib/libalsautils.so
 lib/libaudcal.so
-#lib/libaudioalsa.so
-#lib/libaudioparameter.so
 lib/libbluetooth.so
 lib/libbtl_if.so
 lib/libdiag.so
 lib/libfm_volume.so
+
+# Camera blobs
+bin/mm-qcamera-daemon
+
+# Camera HAL
+lib/hw/camera.msm8960.so
+lib/libcamera_client.so
+lib/libgemini.so
+lib/libimage-jpeg-enc-omx-comp.so
+lib/libimage-omx-common.so
+lib/libmmjpeg.so
+lib/libmmstillomx.so
+lib/libRedEye.so
 
 # GPU firmware
 etc/firmware/a225p5_pm4.fw
@@ -114,18 +127,22 @@ lib/libOpenVG.so
 lib/libsc-a2xx.so
 lib/libsc-a3xx.so
 
-#GPU blobs
+# GPU blobs
 lib/hw/copybit.msm8960.so
 lib/hw/gralloc.msm8960.so
 
-# Wifi
+# Wifi blobs
 bin/dhcpcd
 bin/wpa_supplicant
+
+# Wifi config
 etc/dhcpcd/dhcpcd.conf
 etc/dhcpcd/dhcpcd-run-hooks
 etc/dhcpcd/dhcpcd-hooks/20-dns.conf
 etc/dhcpcd/dhcpcd-hooks/95-configured
 etc/wifi/wpa_supplicant.conf
+
+# Wifi firmware
 vendor/firmware/fw_bcmdhd.bin
 vendor/firmware/fw_bcmdhd_apsta.bin
 vendor/firmware/fw_bcmdhd_p2p.bin

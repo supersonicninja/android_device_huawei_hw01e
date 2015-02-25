@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     device/huawei/hw01e/recovery.fstab:root/fstab.huawei \
     device/huawei/hw01e/ramdisk/init.custom.rc:root/init.rc \
     device/huawei/hw01e/ramdisk/init.huawei.rc:root/init.huawei.rc \
+    device/huawei/hw01e/ramdisk/init.target.rc:root/init.target.rc \
     device/huawei/hw01e/ramdisk/init.wifi.rc:root/init.wifi.rc \
     device/huawei/hw01e/ramdisk/ueventd.rc:root/ueventd.rc
 
@@ -31,29 +32,16 @@ PRODUCT_PACKAGES += \
 audio.primary.msm8960 \
 audio_policy.msm8960 \
 libalsa-intf 
-#alsa.msm8960 \
-#DL_REC \
-#DL_REC_2x \
-#FM_A2DP_REC \
-#FM_A2DP_REC_2x \
-#FM_Digital_Radio \
-#FM_Digital_Radio_2x \
-#FM_REC \
-#FM_REC_2x \
-#HiFi \
-#HiFi_2x \
-#HiFi_Low_Power \
-#HiFi_Low_Power_2x \
-#HiFi_Rec \
-#HiFi_Rec_2x \
-#snd_soc_msm \
-#snd_soc_msm_2x \
-#UL_DL_REC \
-#UL_DL_REC_2x \
-#Voice_Call \
-#Voice_Call_2x \
-#Voice_Call_IP \
-#Voice_Call_IP_2x
+
+# Audio firmware
+PRODUCT_COPY_FILES += \
+device/huawei/hw01e/firmware/wcd9310_anc.bin:/system/etc/firmware/wcd9310/wcd9310_anc.bin \
+device/huawei/hw01e/firmware/wcd9310_anc.bin:/system/etc/firmware/wcd9310/wcd9310_mbhc.bin
+
+# Camera
+PRODUCT_COPY_FILES += \
+ frameworks/base/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 
 
 # Graphics
