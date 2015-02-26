@@ -131,6 +131,37 @@ lib/libsc-a3xx.so
 lib/hw/copybit.msm8960.so
 lib/hw/gralloc.msm8960.so
 
+# idc
+usr/idc/qwerty.idc
+usr/idc/qwerty2.idc
+
+# Keychars
+usr/keychars/Generic.kcm
+usr/keychars/Virtual.kcm
+usr/keychars/qwerty.kcm
+usr/keychars/qwerty2.kcm
+
+# Keylayout
+usr/keylayout/AVRCP.kl
+usr/keylayout/Generic.kl
+usr/keylayout/Vendor_045e_Product_028e.kl
+usr/keylayout/Vendor_046d_Product_c216.kl
+usr/keylayout/Vendor_046d_Product_c294.kl
+usr/keylayout/Vendor_046d_Product_c299.kl
+usr/keylayout/Vendor_046d_Product_c532.kl
+usr/keylayout/Vendor_054c_Product_0268.kl
+usr/keylayout/Vendor_05ac_Product_0239.kl
+usr/keylayout/Vendor_22b8_Product_093d.kl
+usr/keylayout/cyttsp-i2c.kl
+usr/keylayout/keypad_8960.kl
+usr/keylayout/keypad_8960_liquid.kl
+usr/keylayout/msm8960-snd-card_Button_Jack.kl
+usr/keylayout/qwerty.kl
+
+
+# Touch firmare
+etc/firmware/cyttsp_8960_cdp.hex
+
 # Wifi blobs
 bin/dhcpcd
 bin/wpa_supplicant
