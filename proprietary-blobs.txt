@@ -83,8 +83,11 @@ lib/libbtl_if.so
 lib/libdiag.so
 lib/libfm_volume.so
 
-# Camera blobs
+# Camera daemon
 bin/mm-qcamera-daemon
+lib/libidl.so
+lib/liboemcamera.so
+lib/libsensor1.so
 
 # Camera HAL
 lib/hw/camera.msm8960.so
@@ -157,7 +160,6 @@ usr/keylayout/keypad_8960.kl
 usr/keylayout/keypad_8960_liquid.kl
 usr/keylayout/msm8960-snd-card_Button_Jack.kl
 usr/keylayout/qwerty.kl
-
 
 # Touch firmare
 etc/firmware/cyttsp_8960_cdp.hex
