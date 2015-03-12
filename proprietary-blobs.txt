@@ -161,9 +161,8 @@ usr/keylayout/keypad_8960_liquid.kl
 usr/keylayout/msm8960-snd-card_Button_Jack.kl
 usr/keylayout/qwerty.kl
 
-# SDcard
-etc/external_sd.fstab
-etc/internal_sd.fstab
+# Sensors
+lib/hw/sensors.default.so
 
 # Storage
 bin/rmt_storage
