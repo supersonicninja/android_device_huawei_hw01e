@@ -83,6 +83,44 @@ lib/libbtl_if.so
 lib/libdiag.so
 lib/libfm_volume.so
 
+# Camera chromatix
+lib/libchromatix_imx074_default_video.so
+lib/libchromatix_imx074_preview.so
+lib/libchromatix_imx074_video_hd.so
+lib/libchromatix_imx074_zsl.so
+lib/libchromatix_imx091_default_video.so
+lib/libchromatix_imx091_liteon_default_video.so
+lib/libchromatix_imx091_liteon_preview.so
+lib/libchromatix_imx091_liteon_zsl.so
+lib/libchromatix_imx091_preview.so
+lib/libchromatix_imx091_sunny_default_video.so
+lib/libchromatix_imx091_sunny_preview.so
+lib/libchromatix_imx091_sunny_zsl.so
+lib/libchromatix_imx105_sunny_default_video.so
+lib/libchromatix_imx105_sunny_preview.so
+lib/libchromatix_mt9p017_sunny_default_video.so
+lib/libchromatix_mt9p017_sunny_preview.so
+lib/libchromatix_ov2720_default_video.so
+lib/libchromatix_ov2720_preview.so
+lib/libchromatix_ov5647_sunny_default_video.so
+lib/libchromatix_ov5647_sunny_preview.so
+lib/libchromatix_s5k3h2_liteon_default_video.so
+lib/libchromatix_s5k3h2_liteon_preview.so
+lib/libchromatix_s5k3h2_semco_default_video.so
+lib/libchromatix_s5k3h2_semco_preview.so
+lib/libchromatix_s5k3l1yx_default_video.so
+lib/libchromatix_s5k3l1yx_hfr_120fps.so
+lib/libchromatix_s5k3l1yx_hfr_60fps.so
+lib/libchromatix_s5k3l1yx_hfr_90fps.so
+lib/libchromatix_s5k3l1yx_preview.so
+lib/libchromatix_s5k3l1yx_video_hd.so
+lib/libchromatix_s5k3l1yx_zsl.so
+lib/libchromatix_s5k4e1gx_8960_default_video.so
+lib/libchromatix_s5k4e1gx_8960_preview.so
+lib/libchromatix_s5k4e1gx_semco_default_video.so
+lib/libchromatix_s5k4e1gx_semco_preview.so
+
+
 # Camera daemon
 bin/mm-qcamera-daemon
 lib/libidl.so
