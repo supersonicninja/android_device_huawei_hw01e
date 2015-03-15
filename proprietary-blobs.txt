@@ -83,6 +83,34 @@ lib/libbtl_if.so
 lib/libdiag.so
 lib/libfm_volume.so
 
+# Camera blobs
+lib/libmm-abl-oem.so
+lib/libmm-abl.so
+lib/libmm-audio-resampler.so
+lib/libmm-color-convertor.so
+lib/libmm-omxcore.so
+lib/libmmQSM.so
+lib/libmmbfcmp4mw_jni.so
+lib/libmmcamera_frameproc.so
+lib/libmmcamera_statsproc30.so
+lib/libmmhttpstack.so
+lib/libmmiipstreammmihttp.so
+lib/libmmipl.so
+lib/libmmipstreamaal.so
+lib/libmmipstreamnetwork.so
+lib/libmmipstreamsourcehttp.so
+lib/libmmipstreamutils.so
+lib/libmmitest.so
+lib/libmmjpeg.so
+lib/libmmjps.so
+lib/libmmmpo.so
+lib/libmmmpod.so
+lib/libmmosal.so
+lib/libmmparser.so
+lib/libmmrtpencoder.so
+lib/libmmstereo.so
+lib/libmmstillomx.so
+
 # Camera chromatix
 lib/libchromatix_imx074_default_video.so
 lib/libchromatix_imx074_preview.so
