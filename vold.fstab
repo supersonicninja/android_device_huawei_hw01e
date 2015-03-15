@@ -26,3 +26,4 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 dev_mount sdcard /mnt/sdcard auto /devices/platform/msm_sdcc.3/mmc_host
+
